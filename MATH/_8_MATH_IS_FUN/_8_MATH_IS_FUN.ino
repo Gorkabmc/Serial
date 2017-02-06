@@ -16,6 +16,13 @@ long real_drive_kb;
 //******************************** SETUP ******************************************
 void setup()
 {
+  Serial.print("Your HD is")
+  Serial.print(drive_mb)
+  Serial.println("Megabytes")
+
+  Serial.print("It can store")
+  Serial.print(drive_kb)
+  Serial.print("Kilobytes")
 }
 
 //********************************* LOOP ******************************************
