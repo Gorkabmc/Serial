@@ -11,9 +11,9 @@
 int drive_gb = 100;
 long drive_mb;
 //******************************** SETUP ******************************************
-void setup()               //run once, when the sketch starts
+void setup()  //Ejecutar una vez, cuando se inicia           
 {
-  Serial.begin(9600);       //set up Serial library at 9600 bps
+  Serial.begin(9600);       //Velocidad de encendido a 9600
 
   Serial.print("Your HD is ");
   Serial.print(drive_gb);
@@ -28,7 +28,7 @@ void setup()               //run once, when the sketch starts
 }
 
 //********************************* LOOP ******************************************
-void loop()      //we need this to be here even though its empty
+void loop()      //Necesitamos que esto esté aquí aunque esté vacío
 {
 }
 
