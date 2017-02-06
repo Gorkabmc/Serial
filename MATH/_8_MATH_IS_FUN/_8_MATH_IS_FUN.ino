@@ -16,16 +16,16 @@ long real_drive_kb;
 //******************************** SETUP ******************************************
 void setup()
 {
-  Serial.print("Your HD is")
-  Serial.print(drive_mb)
-  Serial.println("Megabytes")
+  Serial.begin(9600); 
+  Serial.print("Your HD is");
+  Serial.print(drive_mb);
+  Serial.println("Megabytes");
 
   drive_mb = drive_kb;
   drive_kb = drive_kb * 1000;
 
-  Serial.print("In teory, It can store")
-  Serial.print(drive_kb)
-  Serial.println("Kilobytes")
+  Serial.print("In teory, It can store");
+  Serial.print(drive_kb);
 }
 
 //********************************* LOOP ******************************************
