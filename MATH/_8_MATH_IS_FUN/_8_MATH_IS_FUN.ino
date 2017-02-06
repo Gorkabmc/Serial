@@ -20,9 +20,10 @@ void setup()
   Serial.print(drive_mb)
   Serial.println("Megabytes")
 
+
   Serial.print("It can store")
   Serial.print(drive_kb)
-  Serial.print("Kilobytes")
+  Serial.println("Kilobytes")
 }
 
 //********************************* LOOP ******************************************
