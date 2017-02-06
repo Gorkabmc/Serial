@@ -26,7 +26,17 @@ void setup()
 
   Serial.print("In teory, It can store ");
   Serial.print( drive_mb );
-  Serial.print(" Megabytes");
+  Serial.print(" Megabytes,");
+
+  drive_kb = drive_mb;
+  drive_kb = drive_kb * 1024;
+  
+  Serial.print( drive_kb );
+  Serial.print(" kilobytes.");
+
+
+
+  
 }
 
 //********************************* LOOP ******************************************
