@@ -22,7 +22,7 @@ void setup()  //Ejecutar una vez, cuando se inicia
   drive_mb = drive_gb;
   drive_mb = drive_mb * 1024;
 
-  Serial.print("It can store ");
+  Serial.print("In teory, It can store ");
   Serial.print(drive_mb);
   Serial.println(" Megabytes!");
 }
