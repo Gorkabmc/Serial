@@ -34,13 +34,13 @@ void setup()
   Serial.print( drive_kb );
   Serial.println(" kilobytes.");
 
-  Serial.print("But it really only stores");
+  Serial.print(" But it really only stores ");
 
-  real_drive_mb = real_drive_gb;
+  real_drive_mb = drive_gb;
   real_drive_mb = real_drive_mb * 1000;
 
   Serial.print( real_drive_mb );
-  Serial.print(" Megabytes, ")
+  Serial.print(" Megabytes, ");
 
 }
 
