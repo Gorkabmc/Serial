@@ -23,7 +23,8 @@ void setup()
   drive_mb = drive_kb;
   drive_mb = drive_kb * 1000;
 
-  Serial.print("In teory, It can store")
+  Serial.print("In teory")
+  Serial.print("It can store")
   Serial.print(drive_kb)
   Serial.println("Kilobytes")
 }
