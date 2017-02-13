@@ -44,12 +44,15 @@ void setup()
 
 
   real_drive_kb = drive_mb;
-  real_drive_kb = real_drive_kb * 100;
+  real_drive_kb = real_drive_kb * 1000;
 
   Serial.print( real_drive_kb );
   Serial.println(" Kilobytes. ");
 
+  missing_drive_kb = drive_kb - real_drive;
+
   Serial.print("You are missing ");
+  Serial.print
 }
 
 //********************************* LOOP ******************************************
