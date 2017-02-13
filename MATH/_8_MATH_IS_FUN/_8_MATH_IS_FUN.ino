@@ -44,7 +44,7 @@ void setup()
 
 
   real_drive_kb = drive_mb;
-  real_drive_kb = real_drive_kb * 1000;
+  real_drive_kb = real_drive_kb * 100;
 
   Serial.print( real_drive_kb );
   Serial.println(" Kilobytes. ");
