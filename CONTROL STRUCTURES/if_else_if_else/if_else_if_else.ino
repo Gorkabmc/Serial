@@ -6,7 +6,7 @@
 **********************************************************************************/
 
 //******************************* INCLUDES ****************************************
-int tempAigua1 = 94;
+int tempAigua1 = 89;
 //******************************* VARIABLES ***************************************
 
 //******************************** SETUP ******************************************
@@ -14,15 +14,15 @@ void setup()
 {
   Serial.begin(9600);     // arrenca a 9600 bps
 
-  if ( tempAigua1 > 100) // 
+  if ( tempAigua1 >= 100) //
   {
     Serial.print("Aigua supera els 100C, esta bullint!"); //
   }
-  if (tempAigua1 >= 100 )
-  {  
+  if ( tempAigua1 >=90  <100)
+  {
     Serial.print("Aigua a punt de bullir");
-  }  
-  if ( tempAigua1 < 100)
+  }
+  if ( tempAigua1 < 90)
   {
     Serial.print("Aigua encara no bull");
   }
