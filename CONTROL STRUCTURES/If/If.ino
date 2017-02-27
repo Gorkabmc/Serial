@@ -12,11 +12,11 @@ int tempAigua = 101;
 //******************************** SETUP ******************************************
 void setup()
 {
-  Serial.begin(9600);     // set up Serial library at 9600 bps
+  Serial.begin(9600);     // arrenca a 9600 bps
 
-  if ( tempAigua > 100)
+  if ( tempAigua > 100) // valor d'aigua es mayor de 100 és dir que l'aigua está bullint
   {
-    Serial.print("Aigua supera els 100C, esta bullint!");
+    Serial.print("Aigua supera els 100C, esta bullint!"); // és el comentari que surt a la pantalla
   } 
 }
 
