@@ -24,17 +24,18 @@ void loop()
     Serial.print("Numero");
     Serial.print(n1);
    
-    if (n1%2==0)
+    if (n1 % 2 == 0 )
     {
       Serial.println ("parell");
   }
 else 
 {
-  Serial.println ( "senar" )
+  Serial.println ( "senar" );
 }
 if 
-Serial.read () =='\n')
-Serial.print ( "Entrar un altre numero" )
+(Serial.read () =='\n')
+Serial.println ( " " );
+Serial.print ( "Entrar un altre numero" );
   }
 }
 //******************************* FUNCIONS ****************************************
