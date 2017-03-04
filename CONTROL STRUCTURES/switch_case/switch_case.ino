@@ -31,6 +31,7 @@ void setup()
     default:
       Serial.println("... I don't know!!!");
   }
+}
 
   //********************************* LOOP ******************************************
   void loop()
