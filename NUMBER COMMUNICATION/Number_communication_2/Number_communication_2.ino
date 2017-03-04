@@ -26,10 +26,12 @@ void loop()
    
     if (n1%2==0)
     {
-      Serial.print ("parell");
+      Serial.println ("parell");
   }
 else 
-{Serial.print ( senar )
+{
+  Serial.println ( "senar" )
+}
 if 
 Serial.read () =='\n')
 Serial.print ( "Entrar un altre numero" )
