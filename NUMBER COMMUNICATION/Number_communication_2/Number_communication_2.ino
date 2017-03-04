@@ -21,21 +21,21 @@ void loop()
 {
   while (Serial.available() > 0) {  // if there's any serial available, read it
     n1 = Serial.parseFloat();// look for valid int the incoming serial stream
-    Serial.print("Numero");
+    Serial.print(" Numero ");
     Serial.print(n1);
 
     if (n1 % 2 == 0 )
     {
-      Serial.println ("parell");
+      Serial.println (" <- parell ");
     }
     else
     {
-      Serial.println ( "senar" );
+      Serial.println ( " <- senar " );
     }
     if
     (Serial.read () == '\n')
-      Serial.println ( " " );
-    Serial.print ( "Entrar un altre numero" );
+      Serial.println ( "  " );
+    Serial.println ( " Entrar un altre numero " );
   }
 }
 //******************************* FUNCIONS ****************************************
