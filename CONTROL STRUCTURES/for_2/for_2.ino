@@ -19,14 +19,14 @@ void setup()
   {
     if (i < 11)
     {
-  Serial.print(i);
-  Serial.print("-");
-}
-else if (i >= 11)
-{
-Serial.print(i);
-}
-}
+      Serial.print(i);
+      Serial.print("-");
+    }
+    else if (i >= 11)
+    {
+      Serial.print(i);
+    }
+  }
 }
 
 //********************************* LOOP ******************************************
