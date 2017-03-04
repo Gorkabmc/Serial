@@ -1,8 +1,8 @@
 /**********************************************************************************
 **                                                                               **
-**                            HELLO WORLD                                        **
+**                            HELLO WORLD 1                                       **
 **                                                                               **
-** GORKA FERNÁNDEZ RAMOS                                       22/01/2017        **
+** GORKA FERNÁNDEZ RAMOS                                       30/01/2017        **
 **********************************************************************************/
 
 //******************************* INCLUDES ****************************************
@@ -10,14 +10,13 @@
 //******************************* VARIABLES ***************************************
 
 //******************************** SETUP ******************************************
-void setup()// run once, when the sketch starts
+void setup()// Nomes s'executa un cop
 {
-  Serial.begin(9600);    
+  Serial.begin(9600);    // configura una biblioteca a velocitat de 9600bpm
+  Serial.print("Hello world!");  // Imprimeix Hello world en una linea només 1 cop
 }
 //********************************* LOOP ******************************************
-void loop()// run over and over again
+void loop()  // s'executa repetidament però ara no fa falta.
 {
-  Serial.print("Hello world!");  // prints Hello world!
-  delay(300);
 }
 //******************************* FUNCIONS ****************************************

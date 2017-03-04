@@ -1,8 +1,8 @@
 /**********************************************************************************
 **                                                                               **
-**                            HELLO WORLD                                        **
+**                            HELLO WORLD 3                                        **
 **                                                                               **
-** GORKA FERNÁNDEZ RAMOS                                       22/01/2017        **
+** GORKA FERNÁNDEZ RAMOS                                       30/01/2017        **
 **********************************************************************************/
 
 //******************************* INCLUDES ****************************************
@@ -10,16 +10,14 @@
 //******************************* VARIABLES ***************************************
 
 //******************************** SETUP ******************************************
-void setup()                // run once, when the sketch starts
+void setup()                // Només repeteix un cop
 {
-  Serial.begin(9600);  Escull el numero de l'operacio que vols realitzar?
- 1.Comprovar numero de tarjeta de credit 
- 2.Comprovar numero de compte bancari 
- 3.Buscar un digit perdut de tarjeta de credit      // CONFIGURA LA VELOCIDAD DE LA LIBRERIA HASTA 9600
+  Serial.begin(9600); // velocitat de execució
 }
 //********************************* LOOP ******************************************
-void loop()                 // run over and over again
+void loop()                 // s'executa repetidament
 {
- // do nothing 
+   Serial.println("Hello World"); // impimeix a la pantalla hello world
+ delay (1000); // velocitat a la que repeteix
 }
 //******************************* FUNCIONS ****************************************

@@ -1,8 +1,8 @@
 /**********************************************************************************
 **                                                                               **
-**                            HELLO WORLD                                        **
+**                            HELLO WORLD 2                                        **
 **                                                                               **
-** GORKA FERNÁNDEZ RAMOS                                       22/01/2017        **
+** GORKA FERNÁNDEZ RAMOS                                       30/01/2017        **
 **********************************************************************************/
 
 //******************************* INCLUDES ****************************************
@@ -10,14 +10,13 @@
 //******************************* VARIABLES ***************************************
 
 //******************************** SETUP ******************************************
-void setup()              
+void setup()     // s'executa només un cop          
 {
-  Serial.begin(9600); // INICIAR PUERTO SERIE A 9600   
+  Serial.begin(9600); // INICIAR PUERTO SERIE A Velo 9600 bmp   
 }
 //********************************* LOOP ******************************************
 void loop()                     
 {
-  Serial.print("Hello world!");  // prints Hello world!
-  delay(500); // VELOCIDAD DE REPETICIÓN 
+  Serial.print(" Hello world! ");  // imprimeix Hello world!
 }
 //******************************* FUNCIONS ****************************************
