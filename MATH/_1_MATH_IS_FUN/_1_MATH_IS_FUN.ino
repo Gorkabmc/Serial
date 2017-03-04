@@ -1,8 +1,8 @@
 /**********************************************************************************
 **                                                                               **
-**                          PLANTILLA CFGS                                       **
+**                              Math if fun                                      **
 **                                                                               **
-** GORKA FERNÁNDEZ RAMOS                                       22/01/2017        **
+** GORKA FERNÁNDEZ RAMOS                                       30/01/2017        **
 **********************************************************************************/
 
 //******************************* INCLUDES ****************************************
@@ -14,24 +14,24 @@ int c = 20; // DEFINIMOS LAS VARIABES QUE USAREMOS
 //******************************** SETUP ******************************************
 void setup()
 {
-  Serial.begin(9600);     // opens serial port, sets data rate to 9600 bps
-  Serial.println(" Here is some math: "); //first line in terminal
-  Serial.print("a = "); // define the variable in terminal
-  Serial.println(a); // in a new line the variable ( a = 5 )
-  Serial.print("b = ");
-  Serial.println(b);
-  Serial.print("c = ");
-  Serial.println(c);
-  Serial.print("a + b = ");       // add 
-  Serial.println(a + b);
-  Serial.print("a * c = ");       // multiply
-  Serial.println(a * c);
-  Serial.print("c / b = ");       // divide
-  Serial.println(c / b);
-  Serial.print("c % b = ");       // module
-  Serial.println(c % b);
-  Serial.print("b - c = ");       // subtract
-  Serial.println(b - c);
+  Serial.begin(9600);     // inicia puerto seria a 9600 bps
+  Serial.println(" Here is some math: "); // escribe here is...
+  Serial.print("a = "); // escribe a =
+  Serial.println(a); // Escribe a continuación el resultado de a
+  Serial.print("b = "); //...
+  Serial.println(b);    //...
+  Serial.print("c = "); //...
+  Serial.println(c);    //...
+  Serial.print("a + b = ");       // suma el valor de a + b
+  Serial.println(a + b); //resultado
+  Serial.print("a * c = ");       // multiplica el valor de a*c
+  Serial.println(a * c);  //resultado
+  Serial.print("c / b = ");       // divide c/b
+  Serial.println(c / b); //resultado
+  Serial.print("c % b = ");       // escribe el modulo de c%b
+  Serial.println(c % b); // resultado
+  Serial.print("b - c = ");       // escribe la resta de b-c
+  Serial.println(b - c); // resultado
 }
 
 //********************************* LOOP ******************************************

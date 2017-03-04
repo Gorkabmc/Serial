@@ -1,8 +1,8 @@
 /**********************************************************************************
 **                                                                               **
-**                          PLANTILLA CFGS                                       **
+**                          MATH IS FUN 2                                        **
 **                                                                               **
-** GORKA FERNÁNDEZ RAMOS                                       22/01/2017        **
+** GORKA FERNÁNDEZ RAMOS                                        6/01/2017        **
 **********************************************************************************/
 
 //******************************* INCLUDES ****************************************
@@ -10,12 +10,12 @@
 //******************************* VARIABLES ***************************************
 int a = 3;
 int b = 4;
-int h;
+int h;             // VALOR DE LES VARIABLES 
 //******************************** SETUP ******************************************
-void setup()
+void setup()   // NOMÉS S'EXECUTA UN COP
 {
- Serial.begin(9600);     // opens serial port, sets data rate to 9600 bps
-Serial.println("Lets calculate a hypoteneuse "); //first line in terminal
+ Serial.begin(9600);     // CONFIGURA PER ARRANCAR A 9600 bps
+Serial.println(" Lets calculate a hypoteneuse "); //ESCRIU EN UNA LINEA lets calcu..
   h = sqrt(a*a + b*b); // hace la raiz cuadrada de las dos variables antes fijadas
   Serial.print("a = ");  
   Serial.println(a); // Escribe el valor de a en una linea nueva

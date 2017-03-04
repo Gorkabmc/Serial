@@ -1,8 +1,8 @@
 /**********************************************************************************
 **                                                                               **
-**                          PLANTILLA CFGS                                       **
+**                          MATH IS FUN 8                                        **
 **                                                                               **
-** GORKA FERNÁNDEZ RAMOS                                       22/01/2017        **
+** GORKA FERNÁNDEZ RAMOS                                        6/02/2017        **
 **********************************************************************************/
 
 //******************************* INCLUDES ****************************************
@@ -13,11 +13,11 @@ long drive_mb;
 long drive_kb;
 long real_drive_mb;
 long real_drive_kb;
-long missing_drive_kb;
+long missing_drive_kb; // VALORS DE LES VARIABLES 
 //******************************** SETUP ******************************************
-void setup()
+void setup() // NOMÉS EXECUTA UN COP 
 {
-  Serial.begin(9600);
+  Serial.begin(9600); // VALOR DE 9600 BPM
   Serial.print("Your HD is ");
   Serial.print(drive_gb);
   Serial.println(" Gb large");

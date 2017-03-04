@@ -1,14 +1,14 @@
 /**********************************************************************************
 **                                                                               **
-**                          PLANTILLA CFGS                                       **
+**                          MATH IS FUN 7                                        **
 **                                                                               **
-** GORKA FERNÁNDEZ RAMOS                                       22/01/2017        **
+** GORKA FERNÁNDEZ RAMOS                                        6/02/2017        **
 **********************************************************************************/
 
 //******************************* INCLUDES ****************************************
 
 //******************************* VARIABLES ***************************************
-int test = 32767;
+int test = 32767; // VALOR DE L VARIABLE 
 //******************************** SETUP ******************************************
 void setup()
 {
@@ -16,10 +16,10 @@ void setup()
   Serial.print("Test value is: ");
   Serial.println(test);
 
-  test = test + 1;
+  test = test + 1; // SUMA 1 AL VALOR DE TEST
  
-  Serial.print("Now it is ");
-  Serial.println(test);
+  Serial.print("Now it is "); 
+  Serial.println(test);   // ESCRIU EL VALOR DE TEST 
 }
 
 //********************************* LOOP ******************************************
