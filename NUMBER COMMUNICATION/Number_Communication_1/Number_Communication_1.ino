@@ -24,13 +24,18 @@ void loop()
     r1 = Serial.parseInt();// look for valid int the incoming serial stream
     Serial.print("r1=")
     Serial.print(r1)
-    Serial.print("ohm")
-    CODI ALUMNE (mostra el valor de r1)
+    Serial.print("ohms")
+   
     r2 = Serial.parseInt();
-    CODI ALUMNE (mostra el valor de r2)
-    if (Serial.read() == '\n') { //look for newline. Is the end of your sentence
-    CODI ALUMNE (calcula r1 i r2 en serie i paral·lel, mostra resultats i                      
-                 fa de nou la pregunta inicial)
+      Serial.print ("r2 = ");       
+      Serial.print (r2);            
+      Serial.println ("Ohms");
+   
+    if (Serial.read() == '\n') { 
+      Serial.print ("rSerie = ");   
+      Serial.print (r1+r2);        
+      Serial.print ("ohms");
+    }
 }
 
 //******************************* FUNCIONS ****************************************
