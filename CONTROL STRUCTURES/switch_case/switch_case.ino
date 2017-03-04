@@ -1,19 +1,19 @@
 /**********************************************************************************
 **                                                                               **
-**                          PLANTILLA CFGS                                       **
+**                              SWITCH CASE                                      **
 **                                                                               **
-** GORKA FERNÁNDEZ RAMOS                                       22/01/2017        **
+** GORKA FERNÁNDEZ RAMOS                                          27/02/2017     **
 **********************************************************************************/
 
 //******************************* INCLUDES ****************************************
 
 //******************************* VARIABLES ***************************************
-int sensorReading = 4;
+int sensorReading = 2;
 //******************************** SETUP ******************************************
-void setup()
+void setup() // NOMÉS UNA EXECUCCIÓ 
 {
-  Serial.begin(9600);
-  Serial.print("The day is ");
+  Serial.begin(9600); // VELOCITAT DE ARRANCADA DEL PORT SERIE 
+  Serial.print("The day is "); // ESCRIU the day is...
 
   switch (sensorReading) {
     case 0:
@@ -29,7 +29,7 @@ void setup()
       Serial.println("bright");
       break;
     default:
-      Serial.println("... I don't know!!!");
+      Serial.println("... I don't know!!!"); // aquest valor cambia segons l'entrada de valor de la variable sensorReading 
   }
 }
 
