@@ -22,9 +22,9 @@ void loop()
 {
     while (Serial.available() > 0) {  // if there's any serial available, read it
     r1 = Serial.parseInt();// look for valid int the incoming serial stream
-    Serial.print("r1=")
-    Serial.print(r1)
-    Serial.print("ohms")
+    Serial.print("r1=");
+    Serial.print(r1);
+    Serial.print("ohms");
    
     r2 = Serial.parseInt();
       Serial.print ("r2 = ");       
@@ -37,5 +37,5 @@ void loop()
       Serial.print ("ohms");
     }
 }
-
+}
 //******************************* FUNCIONS ****************************************
