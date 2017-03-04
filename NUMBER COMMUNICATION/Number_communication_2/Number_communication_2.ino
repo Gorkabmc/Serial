@@ -23,19 +23,19 @@ void loop()
     n1 = Serial.parseFloat();// look for valid int the incoming serial stream
     Serial.print("Numero");
     Serial.print(n1);
-   
+
     if (n1 % 2 == 0 )
     {
       Serial.println ("parell");
-  }
-else 
-{
-  Serial.println ( "senar" );
-}
-if 
-(Serial.read () =='\n')
-Serial.println ( " " );
-Serial.print ( "Entrar un altre numero" );
+    }
+    else
+    {
+      Serial.println ( "senar" );
+    }
+    if
+    (Serial.read () == '\n')
+      Serial.println ( " " );
+    Serial.print ( "Entrar un altre numero" );
   }
 }
 //******************************* FUNCIONS ****************************************
