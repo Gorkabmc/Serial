@@ -20,11 +20,12 @@ void setup()
 void loop()
 {
   while (Serial.available() > 0) {  // if there's any serial available, read it
-    r1 = Serial.parseInt();// look for valid int the incoming serial stream
+    n1 = Serial.parseFloat();// look for valid int the incoming serial stream
     Serial.print("Numero");
     Serial.print(n1);
    
-    if (n1%2==0') {
+    if (n1%2==0)
+    {
       Serial.print ("parell");
   }
 else 
