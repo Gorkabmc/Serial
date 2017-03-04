@@ -22,6 +22,9 @@ void loop()
 {
     while (Serial.available() > 0) {  // if there's any serial available, read it
     r1 = Serial.parseInt();// look for valid int the incoming serial stream
+    Serial.print("r1=")
+    Serial.print(r1)
+    Serial.print("ohm")
     CODI ALUMNE (mostra el valor de r1)
     r2 = Serial.parseInt();
     CODI ALUMNE (mostra el valor de r2)
