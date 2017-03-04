@@ -35,6 +35,10 @@ void loop()
       Serial.print ("rSerie = ");   
       Serial.print (r1+r2);        
       Serial.print ("ohms");
+
+      Serial.print ("rParalel = "); // Escriu (rParalel = )
+      Serial.print ((r1*r2)/(r1+r2));
+      Serial.println ("Ohms"); 
     }
 }
 }
