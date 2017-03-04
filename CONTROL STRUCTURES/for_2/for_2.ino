@@ -18,13 +18,13 @@ void setup()
   for (int i = 0; i <= comptar; i++)
   {
     if (i < 11)
-    }
+    {
   Serial.print(i);
   Serial.print("-");
 }
 else if (i >= 11)
 }
-serial.print(i);
+Serial.print(i);
 }
 }
 
