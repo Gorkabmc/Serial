@@ -1,24 +1,24 @@
 /**********************************************************************************
 **                                                                               **
-**                          PLANTILLA CFGS                                       **
+**                               PRINT 2                                         **
 **                                                                               **
-**     GORKA FERNÁNDEZ RAMOS                                       22/01/2017    **
+**     GORKA FERNÁNDEZ RAMOS                                       13/02/2017    **
 **********************************************************************************/
 
 //******************************* INCLUDES ****************************************
 
 //******************************* VARIABLES ***************************************
-  int thisByte = 33;
+  int thisByte = 33; // VALOR DE LES VARIABES 
 //******************************** SETUP ******************************************
-  void setup()
+  void setup() // NOMÉS EXECUTA UN COP
   {
-  Serial.begin(9600);    // set up Serial library at 9600 bps
+  Serial.begin(9600);    // ARRANCA A 9600 bps
 
   Serial.println("Different formats for the same number:");
   }
 
 //********************************* LOOP ******************************************
-  void loop()
+  void loop() // REPETIDAMENT 
   {
   Serial.write(thisByte); 
   Serial.print(", dec: "); 
@@ -30,13 +30,13 @@
   Serial.print(", bin: "); 
   Serial.println(thisByte, BIN);   
 
-  if(thisByte == 126)  // if printed last visible character '~'
+  if(thisByte == 126)  // SI EL CALOR DE THISBYTE ES IGUAL A 126
   { 
-    while(true)
+    while(true)   // MENTRES SIGUI CERT ANIRA REPETINT EL CILCE
     { 
     } 
   } 
-  thisByte++;     // go on to the next characte
+  thisByte++;     // SUMA 1 A " THISBYTE "
   }
 
 //******************************* FUNCIONS ****************************************
