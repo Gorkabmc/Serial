@@ -24,21 +24,21 @@ void loop()
     r1 = Serial.parseInt();// look for valid int the incoming serial stream
     Serial.print("r1=");
     Serial.print(r1);
-    Serial.print("ohms");
+    Serial.print("  ohms  ");
 
     r2 = Serial.parseInt();
     Serial.print ("r2 = ");
     Serial.print (r2);
-    Serial.println ("Ohms");
+    Serial.println ("  Ohms  ");
 
     if (Serial.read() == '\n') {
       Serial.print ("rSerie = ");
       Serial.print (r1 + r2);
-      Serial.print ("ohms");
+      Serial.print ("  ohms  ");
 
       Serial.print ("rParalel = "); // Escriu (rParalel = )
       Serial.print ((r1 * r2) / (r1 + r2));
-      Serial.println ("Ohms");
+      Serial.println ("  Ohms  ");
       Serial.println (" ");
       Serial.println ("Entra nous valors per r1 i r2");
     }
