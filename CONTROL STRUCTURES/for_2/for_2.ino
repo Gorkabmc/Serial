@@ -23,8 +23,9 @@ void setup()
   Serial.print("-");
 }
 else if (i >= 11)
-}
+{
 Serial.print(i);
+}
 }
 }
 
