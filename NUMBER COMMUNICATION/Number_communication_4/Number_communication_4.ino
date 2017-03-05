@@ -15,56 +15,43 @@ int salari_net; // VALORS DE VARIABLES
 void setup() // S'EXECUTA UN COP 
 {
   Serial.begin(9600); // VELOCITAT D ARRANC A 9600BPM
-  Serial.println("Entrar numero"); // IMPRIMEIX entrar numero
+  Serial.println("Quantes hores de treball"); // IMPRIMEIX Quantes hores...
 }
 
 //********************************* LOOP ******************************************
 void loop() // S'EXECUTA REPETIDAMENT 
 { 
   while (Serial.available() > 0) {
-    n1 = Serial.parseFloat(); 
-    Serial.print ("El numero "); // IMPRIMEIX " El numero "
-    Serial.print (n1);
-    if (n1 / 10 == 0) // FA PRIMER LA DIVISIO 
+    hores = Serial.parseFloat(); 
+    Serial.print (" EL SALARI PER "); // IMPRIMEIX " El salari per "
+    Serial.print (hores);
+    if (hores < 38) // SI LES HORES SON INFERIORS A 38
     {
-      Serial.println (" te 1 xifra");
-      // SI AL FER LA DIVISIO DE N1 / 10 I DONA =0 IMPRIMEIX " te 1 xifra "
-      Serial.println (" ");
+      salari = hores * 20 ; // MULTIPLICA LES HORES PER 20 I DONA EL SALARI
+      Serial.println ("HORES DE TREBALL ES DE");
+      // ESCRIU hores de treball es de
     }
-    else if (n1 / 100 == 0)
+    else if (hores > 38)
     {
-      Serial.println (" te 2 xifres");
-      // SI AL FER LA DIVISIO DE N1 / 100 I DONA =0 IMPRIMEIX " te 2 xifra "
-      Serial.println (" ");
-    }
-    else if (n1 / 1000 == 0)
+      salari = hores * (20*1.5) ;
+      Serial.println ("HORES DE TREBALL ES DE");
+      // IMPRIMEIX hores de treball es de 
+         }
+    else if (salari <= 800)
     {
-      Serial.println (" te 3 xifres");
-      // SI AL FER LA DIVISIO DE N1 / 1000 I DONA =0 IMPRIMEIX " te 3 xifra "
-      Serial.println (" ");
-    }
-    else if (n1 / 10000 == 0)
+      salarinet = salari - ( salari *0.05) ; 
+      Serial.println (" SALARINET ES DE ");
+      // IMPRIMEIX salari net es de 
+          }
+    else if (salari > 800)
     {
-      Serial.println (" te 4 xifres");
-      // SI AL FER LA DIVISIO DE N1 / 10000 I DONA =0 IMPRIMEIX " te 4 xifra "
-      Serial.println (" ");
-    }
-    else if (n1 / 100000 == 0)
-    {
-      Serial.println (" te 5 xifres");
-      // SI AL FER LA DIVISIO DE N1 / 100000 I DONA =0 IMPRIMEIX " te 5 xifra "
-      Serial.println (" ");
-    }
-    else if (n1 / 1000000 == 0)
-    {
-      Serial.println (" te 6 xifres");
-      // SI AL FER LA DIVISIO DE N1 / 1000000 I DONA =0 IMPRIMEIX " te 6 xifra "
-      Serial.println (" ");
-    }
-
+      salarinet = salari - ( salari * 0.1 ) ;
+            Serial.println (" SALARINET ES DE ");
+      // ESCRIU salarinet es de
+        }
     if (Serial.read() == '\n')
       Serial.println (" "); // ESCRIU UN ( _ )
-    Serial.println ("Entra un altre numero !"); // IMPRIMEIX entrar un altre numero
+    Serial.println (" QUANTES HORES TREBALLES ?"); // IMPRIMEIX quantes hores..
   }
 }
 //******************************* FUNCIONS ****************************************
