@@ -15,7 +15,7 @@ int salari_net; // VALORS DE VARIABLES
 void setup() // S'EXECUTA UN COP
 {
   Serial.begin(9600); // VELOCITAT D ARRANC A 9600BPM
-  Serial.println("Quantes hores de treball"); // IMPRIMEIX Quantes hores...
+  Serial.println(" Quantes hores de treball ? "); // IMPRIMEIX Quantes hores...
 }
 
 //********************************* LOOP ******************************************
@@ -37,7 +37,7 @@ void loop() // S'EXECUTA REPETIDAMENT
       Serial.println ("HORES DE TREBALL ES DE");
       // IMPRIMEIX hores de treball es de
     }
-    else if (salari <= 800)
+    if (salari <= 800)
     {
       salari_net = salari - ( salari * 0.05) ;
       Serial.print (" SALARINET ES DE ");
