@@ -33,23 +33,23 @@ void loop() // S'EXECUTA REPETIDAMENT
     }
     else if (hores >= 38)
     {
-      salari = hores * (20*1.5) ;
+      salari = hores * 20 ;
       Serial.print (" HORES DE TREBALL ES DE ");
       // IMPRIMEIX hores de treball es de
     }
     if (salari <= 800)
     {
-      salari_net = salari - (salari *0.05) ;
+      salari_net = salari - 0.1 ;
       Serial.print (salari_net);
       // IMPRIMEIX salari net es de
       Serial.println (" Euros ");
       // IMPRIMEIX euros
       Serial.println (" ");
-      
+
     }
     else if (salari > 800)
     {
-      salari_net = salari - (salari *0.1) ;
+      salari_net = salari - 0.05 ;
       Serial.print (salari_net);
       // ESCRIU salarinet es de
       Serial.println (" Euros ");
