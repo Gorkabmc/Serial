@@ -22,7 +22,7 @@ void setup() // S'EXECUTA UN COP
 void loop() // S'EXECUTA REPETIDAMENT
 {
   while (Serial.available() > 0) {
-    hores = Serial.parseInt();
+    hores = Serial.parseFloat();
     Serial.print (" EL SALARI PER "); // IMPRIMEIX " El salari per "
     Serial.print ( hores );
     if (hores < 38) // SI LES HORES SON INFERIORS A 38
@@ -31,16 +31,16 @@ void loop() // S'EXECUTA REPETIDAMENT
       Serial.print (" HORES DE TREBALL ES DE ");
       // ESCRIU hores de treball es de
     }
-    else if (hores > 38)
+    else if (hores >= 38)
     {
-      salari = hores * 20;
-      Serial.println (" HORES DE TREBALL ES DE ");
+      salari = hores * (20*1.5) ;
+      Serial.print (" HORES DE TREBALL ES DE ");
       // IMPRIMEIX hores de treball es de
     }
     if (salari <= 800)
     {
       salari_net = salari - (salari *0.05) ;
-      Serial.print (" salari_net ");
+      Serial.print (salari_net);
       // IMPRIMEIX salari net es de
       Serial.println (" Euros ");
       // IMPRIMEIX euros
