@@ -10,19 +10,19 @@
 //******************************* VARIABLES ***************************************
 int hores;
 int salari;
-int salari_net; // VALORS DE VARIABLES 
+int salari_net; // VALORS DE VARIABLES
 //******************************** SETUP ******************************************
-void setup() // S'EXECUTA UN COP 
+void setup() // S'EXECUTA UN COP
 {
   Serial.begin(9600); // VELOCITAT D ARRANC A 9600BPM
   Serial.println("Quantes hores de treball"); // IMPRIMEIX Quantes hores...
 }
 
 //********************************* LOOP ******************************************
-void loop() // S'EXECUTA REPETIDAMENT 
-{ 
+void loop() // S'EXECUTA REPETIDAMENT
+{
   while (Serial.available() > 0) {
-    hores = Serial.parseFloat(); 
+    hores = Serial.parseFloat();
     Serial.print (" EL SALARI PER "); // IMPRIMEIX " El salari per "
     Serial.print (hores);
     if (hores < 38) // SI LES HORES SON INFERIORS A 38
@@ -33,22 +33,27 @@ void loop() // S'EXECUTA REPETIDAMENT
     }
     else if (hores > 38)
     {
-      salari = hores * (20*1.5) ;
+      salari = hores * (20 * 1.5) ;
       Serial.println ("HORES DE TREBALL ES DE");
-      // IMPRIMEIX hores de treball es de 
-         }
+      // IMPRIMEIX hores de treball es de
+    }
     else if (salari <= 800)
     {
-      salarinet = salari - ( salari *0.05) ; 
-      Serial.println (" SALARINET ES DE ");
-      // IMPRIMEIX salari net es de 
-          }
+      salari_net = salari - ( salari * 0.05) ;
+      Serial.print (" SALARINET ES DE ");
+      // IMPRIMEIX salari net es de
+      Serial.println (" Euros ");
+      // IMPRIMEIX euros
+    }
     else if (salari > 800)
     {
-      salarinet = salari - ( salari * 0.1 ) ;
-            Serial.println (" SALARINET ES DE ");
+      salari_net = salari - ( salari * 0.1 ) ;
+      Serial.print (" SALARINET ES DE ");
       // ESCRIU salarinet es de
-        }
+      Serial.println (" Euros ");
+      // IMPRIMEIX euros
+
+    }
     if (Serial.read() == '\n')
       Serial.println (" "); // ESCRIU UN ( _ )
     Serial.println (" QUANTES HORES TREBALLES ?"); // IMPRIMEIX quantes hores..
