@@ -24,17 +24,17 @@ void loop() // S'EXECUTA REPETIDAMENT
   while (Serial.available() > 0) {
     hores = Serial.parseFloat();
     Serial.print (" EL SALARI PER "); // IMPRIMEIX " El salari per "
-    Serial.print (hores);
+    Serial.print ( hores );
     if (hores < 38) // SI LES HORES SON INFERIORS A 38
     {
       salari = hores * 20 ; // MULTIPLICA LES HORES PER 20 I DONA EL SALARI
-      Serial.println ("HORES DE TREBALL ES DE");
+      Serial.print (" HORES DE TREBALL ES DE ");
       // ESCRIU hores de treball es de
     }
-    else if (hores > 38)
+    if (hores > 38)
     {
       salari = hores * (20 * 1.5) ;
-      Serial.println ("HORES DE TREBALL ES DE");
+      Serial.println (" HORES DE TREBALL ES DE ");
       // IMPRIMEIX hores de treball es de
     }
     if (salari <= 800)
