@@ -39,7 +39,7 @@ void loop() // S'EXECUTA REPETIDAMENT
     }
     if (salari <= 800)
     {
-      salari_net = salari - 0.1 ;
+      salari_net = salari - (0.1) ;
       Serial.print (salari_net);
       // IMPRIMEIX salari net es de
       Serial.println (" Euros ");
@@ -49,7 +49,7 @@ void loop() // S'EXECUTA REPETIDAMENT
     }
     else if (salari > 800)
     {
-      salari_net = salari - 0.05 ;
+      salari_net = salari - (0.05*100) ;
       Serial.print (salari_net);
       // ESCRIU salarinet es de
       Serial.println (" Euros ");
