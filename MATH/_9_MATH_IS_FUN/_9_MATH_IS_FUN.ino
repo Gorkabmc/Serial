@@ -14,7 +14,13 @@
 //******************************** SETUP ******************************************
   void setup()
   {
-  Serial.begin(9600);      // ARRANCAR A 9600 bps
+    Serial.println(" Quantes hores de treball ? ");
+  }
+
+//********************************* LOOP ******************************************
+  void loop()
+  {
+      Serial.begin(9600);      // ARRANCAR A 9600 bps
 
   Serial.println("Here is division: ");
 
@@ -28,11 +34,6 @@
   Serial.print("a / b = ");
   Serial.println(d);
 
-  }
-
-//********************************* LOOP ******************************************
-  void loop()
-  {
   }
 
 //******************************* FUNCIONS ****************************************
